@@ -6,9 +6,9 @@ contextBridge.exposeInMainWorld('dialogAPI', {
     }
   });
 
-ipcRenderer.on('open-dialog-reply', (event, filePaths) => {
-    console.log(`Canceled? ${filePaths.canceled}`);
-    console.log(`File Paths: ${filePaths.filePaths.join(';')}`);
+ipcRenderer.on('open-dialog-reply', (event, data) => {
+    document.querySelector('#isCancelledText').innerHTML = data.canceled;
+    document.querySelector('#filepathsText').innerHTML = data.filePaths.join('\n');
 });
 
 window.addEventListener('DOMContentLoaded', () => {

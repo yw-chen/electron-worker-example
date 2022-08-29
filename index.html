@@ -8,12 +8,14 @@
   </head>
   <body>
     <h1>Hello World!</h1>
+    <br>
     <button id="btnOpen">Open File</button>
-
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
-
+    <br>
+    <label>Open File Cancelled?</label>
+    <textarea id="isCancelledText"></textarea>
+    <br>
+    <label>Filepaths</label>
+    <textarea id="filepathsText"></textarea>
     <script src="renderer.js"></script>
   </body>
 </html>
