@@ -1,3 +1,3 @@
-document.querySelector('#btnOpen').addEventListener('click', () => {
-    dialogAPI.openDialog();
-});
+// document.querySelector('#btnOpen').addEventListener('click', () => {
+//     dialogAPI.openDialog();
+// });
